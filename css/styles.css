@@ -1,0 +1,378 @@
+
+/* Configuracion inicial de estilo */
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+/* Codigo de Colores a utilizar en el sitio */
+
+:root {
+   --moonstone: #7cacb6ff;
+   --silver: #c7c9c6ff;
+   --golden-brown: #a47005ff;
+   --myrtle-green: #476d70ff;
+   --licorice: #19110eff; 
+}
+ /* Configuracion de estilo index */
+
+ 
+body {	
+    color: var(--golden-brown);
+	background-image: url(../img/presentacion1.jpg);
+	background-attachment: fixed;
+	background-size: 100%;
+	font-size: 1em;
+	line-height: 1.5em; 
+}
+
+p {
+	margin: 0 0 1.5em 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+/* Estas líneas de CSS las usaremos para dar estilo a la cabecera: */
+	
+navbar navbar-expand-lg bg-body-tertiary{ 
+	position: fixed; 
+	gap: 60px;
+	color: white;
+}
+.navbar-brand{
+color: white;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+	color: white!important;
+}
+.nav-link{
+	color: white!important;
+
+}
+.navbar-toggler-icon{
+	color: white!important;
+}
+header {
+        background:var(--moonstone);
+		
+       /* Con estos estilos aplicaremos diseño al contenido del index: */
+}
+
+#main-content {
+background-color: var(--silver);
+
+	opacity: 70%;
+	width: 70%;
+	max-width: 900px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#main-content h1{
+	color: var(--golden-brown);
+	padding: 50px;
+	font-size: 3rem;
+	line-height: 1.5em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+
+}
+#main-content .content {
+	padding: 50px;
+	color: var(--licorice);
+	}
+/* Y por último, con esto estilizaremos el pie de página: */
+
+#main-footer {
+	text-align: center;
+	padding: 40px;
+	margin-top: 40px;}
+
+
+ #main-footer p {
+        background: var(--moonstone);
+		margin: 0;
+        width: 100%; 
+        left: 0;
+		color: var(--licorice);
+	}
+	
+#main-footer a {
+		color: white;
+		width: 100%;
+	}
+	/* CAROUSELMAIN */
+@media (min-width: 530px) {
+	#carouselExampleIndicators{
+		margin: 0 auto;
+		width: 70%;
+	}
+	.carousel-item active .carousel-item img{
+		height: 550px;
+
+	}
+	
+}
+/*Configuracion de la galeria*/	/* GALERIA */
+.bodydegaleria {
+	background-image: url(../img/presentacion2.jpg);
+	background-color: var(--myrtle-green);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.galeriadeimagenes h1{
+	color: var(--golden-brown);
+	font-size: 100px;
+	font-weight: 100;
+	text-align: center;
+	
+}
+	/* GALERIA */
+	.container-img{
+		width: 100%;
+		max-width: 1100px;
+		margin: auto;
+		margin-top: 60px;
+		margin-bottom: 60px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 250px;
+		grid-gap: 20px;
+	}
+	.container-img .box-img figure{
+		width: 100%;
+		height: 100%;
+	}
+	.container-img .box-img img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.container-img .box-img:nth-child(1){
+		grid-column-start: span 2;
+	}
+	.container-img .box-img:nth-child(4){
+		grid-row-start: span 2;
+	}
+	.container-img .box-img:nth-child(9){
+		grid-column-start: span 2;
+	}
+	@media screen and (max-width:800px){
+		.container-img{
+			width: 95%;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 10px;
+			grid-template-rows: 200px;
+		}
+		.container-img .box-img:nth-child(1){
+			grid-column-start: span 1;
+		}
+		.galeriadeimagenes h1{
+			color: var(--golden-brown);
+			font-size: 70px;
+			font-weight: 100;
+			text-align: center;
+			
+		}
+
+	}
+	@media screen and (max-width:500px){
+		.container-img{
+			width: 90%;
+			grid-template-columns: repeat(1, 1fr);
+		}
+		.container-img .box-img img{
+			height: 200px;
+		}
+		.galeriadeimagenes h1{
+			color: var(--golden-brown);
+			font-size: 70px;
+			font-weight: 100;
+			text-align: center;
+			
+		}
+	}
+
+
+
+
+
+/*Configuracion de Ebooks*/
+/* Global */
+
+#cuerpo-ebooks {
+background-image: url(../img/presentacion6.jpg);
+background-attachment: fixed;
+padding: 15px;
+max-width: 1100px;
+background-color:  var(--myrtle-green);
+color: var(--licorice);
+}
+
+.titulodepagina{
+	font-size: 40px;
+	color: var(--golden-brown);
+	margin-top: 70px;
+}
+
+img{
+	max-width: 100%;
+}
+
+
+/* main */
+.conteiner-icon{
+	float: right;
+	justify-content: space-betweenL;
+	padding: 30px 0 40px 0 0;
+}
+.conteiner-items{
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.item{
+	border-radius: 10px;
+}
+
+.item:hover{
+box-shadow: 0 30px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0 ;
+	transition all: .5s;
+
+}
+.item figure{
+	overflow: hidden;
+}
+.item:hover img{
+transform: scale(1.2);
+}
+
+.info-product{
+	color: var(--licorice);
+	padding: 15px 30px;
+	line-height: 2;
+	display: inline-block;
+	gap: 10px;
+}
+
+.price{
+	color: var(--golden-brown);
+	font-size: 18px;
+	font-weight: 900;
+}
+
+.info-product button{
+	align-content: center;
+	border: none;
+	background: none;
+	background-color: var(--golden-brown);
+    color: white;
+	padding: 15px 10px;
+	cursor: pointer;
+	border-radius: 10px 10px 10px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pagina Contacto */
+
+#cuerpo-contacto{
+	background-image: url(../img/presentacion4.jpg);
+	background-attachment: fixed;
+}
+.container-form{
+	display: inline-block;
+	padding-left: 20px;
+	width: 100%;
+	max-width: 700px;
+	margin-top: 90px;
+	margin: 20px auto ;
+}
+
+.container-form h2{
+	margin-bottom: 15px;
+	font-size: 40px;
+}
+
+.container-form p{
+	display: inline;
+	font-size: 20px;
+	line-height: 1.6;
+	margin-bottom: 30px;
+}
+
+.container-form a{
+	font-size: 17px;
+	display: inline-block;
+	text-decoration: none;
+	width: 100%;
+	color: black;
+	margin-bottom: 15px;
+	font-weight: 700;
+
+}
+
+.cuerpo-form{
+	display: inline-block;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo de Recetas */
+
+.cuerporeceta{
+	background-image: url(../img/presentacion7.jpg);
+	background-attachment: fixed;
+}
+
+.titulorecetas{
+	font-size: 40px;
+	color: var(--golden-brown);
+	}
+
+.primer-receta {
+	background: white;
+	opacity: 100%;
+	width: 90%;
+	max-width: 700px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.primer-receta header,.primer-receta .content{
+	padding: 20px;
+	opacity: 100%;
+	}
