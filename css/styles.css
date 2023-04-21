@@ -303,6 +303,7 @@ transform: scale(1.2);
 #cuerpo-contacto{
 	background-image: url(../img/presentacion4.jpg);
 	background-attachment: fixed;
+	align-content: center;
 }
 .container-form{
 	display: inline-block;
@@ -335,20 +336,6 @@ transform: scale(1.2);
 	font-weight: 700;
 
 }
-
-.cuerpo-form{
-	display: inline-block;
-
-}
-
-
-
-
-
-
-
-
-
 
 
 /* Estilo de Recetas */
